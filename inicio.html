@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background-color: #ff4d6d;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 300px;
+        }
+        p {
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #ff4d6d;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ffe6ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Oi, meu amor ❤️</h2>
+        <p> Fiz um pequeno recadinho para você, te amo muito e to morrendo de saudade, penso em você 24 horas por dia, é simples mas é com muito amor</p>
+        <button onclick="entrar()">Entrar no recadinho</button>
+    </div>
+    <script>
+        function entrar() {
+            window.location.href = "amor.html";
+        }
+    </script>
+</body>
+</html>

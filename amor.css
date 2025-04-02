@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* /* flex-direction: column;
+        background-image: url('/imgs/imagem\ fundo\ coração.avif'); /* Substitua pelo nome do seu arquivo */
+
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.image-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+    height:400px;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contador {
+    font-family: 'Pacifico', cursive; /* Fonte personalizada */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #ff69b4; /* Cor rosa vibrante */
+    text-align: center; /* Centralizar o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+.texto {
+    font-family: 'Dancing Script', cursive; /* Fonte personalizada */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #ffb6c1; /* Cor rosa claro */
+    text-align: center; /* Centralizar o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+.divider {
+    border: none; /* Remove o estilo padrão */
+    height: 2px; /* Define a altura da linha */
+    background: linear-gradient(to right, #ff69b4, #ffb6c1); /* Gradiente de cores */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.spotify-player {
+    margin: 20px auto;
+    text-align: center;
+    
+}
+#emoji-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite clicar nos elementos abaixo */
+    overflow: hidden;
+    z-index: 9999; /* Garante que fique acima de tudo */
+}
+
+.emoji {
+    position: absolute;
+    font-size: 24px; /* Tamanho inicial dos emojis */
+    animation: fall 4s linear infinite; /* Animação de queda */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
